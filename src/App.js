@@ -7,13 +7,13 @@ function App() {
   return (
     <div className="App">
       <div className="App-div">
-        <img src={img} alt="img" />
-        <h2>
+        <img className="App-div--img" src={img} alt="img" />
+        <h2 className="App-div--heading">
           Equilibrium #3429
           <br />
           <span>Our Equilibrium collection promotes balance and calm.</span>
         </h2>
-        <div>
+        <div className="App-div--body">
           <span>
             <img src={loc} alt="loc" />
             0.041ETH
@@ -23,7 +23,7 @@ function App() {
             3days left
           </span>
         </div>
-        <div>
+        <div className="App-div--footer">
           <img src={avatar} alt="avatar" />
           <h3>
             Creation of <span>Jules Wyvern</span>

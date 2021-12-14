@@ -1,4 +1,17 @@
-.App{
-  background-color:hsl(217, 54%, 11%);
+.App {
+  background-color: hsl(217, 54%, 11%);
+ position: relative;
   height: 100vh;
+  &-div {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid red;
+    width:40rem;
+    height: 50%;
+    &--img {
+      width: 50%;
+    }
+  }
 }
