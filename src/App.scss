@@ -1,17 +1,109 @@
 .App {
   background-color: hsl(217, 54%, 11%);
- position: relative;
+  position: relative;
   height: 100vh;
   &-div {
+    padding: 2rem 1rem;
+    background-color: hsl(216, 50%, 16%);
+    // margin: 0 auto;
     position: absolute;
     top: 15%;
     left: 50%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transform: translateX(-50%);
-    border: 1px solid red;
-    width:40rem;
-    height: 50%;
-    &--img {
-      width: 50%;
+    // border: 1px solid red;
+    border-radius: 1rem;
+    width: 40%;
+    min-width: 35rem;
+    min-height: 55rem;
+    &-container {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+      cursor: pointer;
+      &--img-1 {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+      &--img-2 {
+        position: absolute;
+        // display: none;
+        top: 43%;
+        left: 43%;
+        transform: translateX(-43%, -43%);
+        // cursor: pointer;
+      }
+      &:hover{
+      
+          // display: block;
+          background-color:hsl(178, 100%, 50%);
+        
+      }
+    }
+
+    &--heading {
+      // border: 1px solid red;
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      width: 90%;
+      margin: 8% auto;
+      font-size: 2rem;
+      font-weight: 600;
+      span {
+        font-weight: 300;
+        font-size: 1.7rem;
+        color: hsl(215, 51%, 70%);
+      }
+    }
+    &--body {
+      // border: 1px solid red;
+      padding-bottom: 1rem;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      span {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        img {
+          margin-right: 0.5rem;
+        }
+        &:first-of-type {
+          color: hsl(178, 100%, 50%);
+        }
+      }
+    }
+    &--footer {
+      width: 90%;
+      margin: 5% auto;
+      border-top: 1px solid hsl(215, 51%, 70%);
+      div {
+        padding-top: 2rem;
+        display: flex;
+
+        align-items: center;
+        img {
+          width: 3rem;
+          height: 3rem;
+          margin-right: 1.5rem;
+          border: 1px solid hsl(0, 0%, 100%);
+          border-radius: 50%;
+        }
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 300;
+          span {
+            font-weight: 400;
+            color: hsl(0, 0%, 100%);
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
