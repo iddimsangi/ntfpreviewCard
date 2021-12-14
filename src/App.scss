@@ -25,6 +25,7 @@
       margin: 0 auto;
       position: relative;
       cursor: pointer;
+      z-index: 999;
       &--img-1 {
         width: 100%;
         border-radius: 0.5rem;
@@ -36,11 +37,13 @@
         left: 43%;
         transform: translateX(-43%, -43%);
         // cursor: pointer;
-      }
-      &:hover{
       
-          // display: block;
+      }
+
+      &:hover{
+    
           background-color:hsl(178, 100%, 50%);
+        
         
       }
     }
@@ -53,6 +56,10 @@
       margin: 8% auto;
       font-size: 2rem;
       font-weight: 600;
+      transition: all .4s;
+      &:not(:last-child):hover{
+        color: hsl(178, 100%, 50%);
+      }
       span {
         font-weight: 300;
         font-size: 1.7rem;
@@ -75,6 +82,7 @@
         }
         &:first-of-type {
           color: hsl(178, 100%, 50%);
+          
         }
       }
     }
@@ -101,6 +109,10 @@
             font-weight: 400;
             color: hsl(0, 0%, 100%);
             cursor: pointer;
+            transition: all .3s;
+            &:hover{
+              color: hsl(178, 100%, 50%);
+            }
           }
         }
       }
