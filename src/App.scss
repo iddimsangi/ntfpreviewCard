@@ -1,13 +1,13 @@
 .App {
   background-color: hsl(217, 54%, 11%);
   position: relative;
-  height: 100vh;
+ height: 110vh;
   &-div {
     padding: 2rem 1rem;
     background-color: hsl(216, 50%, 16%);
     // margin: 0 auto;
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     display: flex;
     flex-direction: column;
@@ -18,18 +18,25 @@
     // border: 1px solid red;
     border-radius: 1rem;
     width: 40%;
-    min-width: 35rem;
+    min-width: 34rem;
     min-height: 55rem;
+    transition: all .4s;
     &-container {
       width: 90%;
+      min-width: 30rem;
+      height: 30rem;
+      background-image: url(./images/image-equilibrium.jpg);
+      background-size: 100%;
+      background-position:center;
+      // background-attachment: fixed;
       margin: 0 auto;
       position: relative;
       cursor: pointer;
-      z-index: 999;
-      &--img-1 {
-        width: 100%;
-        border-radius: 0.5rem;
-      }
+      // z-index: 999;
+      // &--img-1 {
+      //   width: 100%;
+      //   border-radius: 0.5rem;
+      // }
       &--img-2 {
         position: absolute;
         // display: none;
@@ -41,9 +48,8 @@
       }
 
       &:hover{
-    
-          background-color:hsl(178, 100%, 50%);
-        
+        background-image:linear-gradient(hsla(178, 100%, 50%, 0.578),hsla(178, 100%, 50%, 0.356) ), url(./images/image-equilibrium.jpg);
+          // background-color:hsl(178, 100%, 50%);
         
       }
     }
@@ -61,6 +67,7 @@
         color: hsl(178, 100%, 50%);
       }
       span {
+        
         font-weight: 300;
         font-size: 1.7rem;
         color: hsl(215, 51%, 70%);

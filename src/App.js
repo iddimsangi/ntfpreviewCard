@@ -1,5 +1,5 @@
 import "./App.scss";
-import img from "./images/image-equilibrium.jpg";
+// import img from "./images/image-equilibrium.jpg";
 import loc from "./images/icon-ethereum.svg";
 import clock from "./images/icon-clock.svg";
 import avatar from "./images/image-avatar.png";
@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <div className="App-div">
-        <a href="#" className="App-div-container">
+        <div  className="App-div-container">
         <img className="App-div-container--img-2" src={view} alt="img" />
-        <img className="App-div-container--img-1" src={img} alt="img" />
-        </a>
+        {/* <img className="App-div-container--img-1" src={img} alt="img" /> */}
+        </div>
 
         <h2 className="App-div--heading">
           Equilibrium #3429
