@@ -19,8 +19,8 @@
     border-radius: 1rem;
     width: 30%;
     min-width: 34rem;
-    height: 80%;
-    min-height: 45rem;
+    height: 55rem;
+    // min-height: 45rem;
     transition: all .4s;
     &-container {
       width: 90%;
@@ -43,9 +43,11 @@
       &--img-2 {
         position: absolute;
         // display: none;
-        top: 43%;
-        left: 43%;
-        transform: translateX(-43%, -43%);
+        opacity: 0;
+        transition: all .4s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         // cursor: pointer;
       
       }
@@ -53,24 +55,33 @@
       &:hover{
         background-image:linear-gradient(hsla(178, 100%, 50%, 0.578),hsla(178, 100%, 50%, 0.356) ), url(./images/image-equilibrium.jpg);
           // background-color:hsl(178, 100%, 50%);
+          .App-div-container--img-2 {
+          opacity: 1;
+        }
         
       }
     }
 
     &--heading {
       // border: 1px solid red;
-      color: hsl(0, 0%, 100%);
-      cursor: pointer;
       width: 90%;
       margin: 8% auto;
-      font-size: 2rem;
-      font-weight: 600;
-      transition: all .4s;
-      &:not(:last-child):hover{
-        color: hsl(178, 100%, 50%);
+      h2{
+        color: hsl(0, 0%, 100%);
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 600;
+        transition: all .4s;
+      
+        &:not(:last-child):hover{
+          color: hsl(178, 100%, 50%);
+        }
       }
-      span {
-        
+     
+      p {
+        // border: 1px solid red;
+        margin-top: 1.2rem;
+        // border: 1px solid red;
         font-weight: 300;
         font-size: 1.7rem;
         color: hsl(215, 51%, 70%);

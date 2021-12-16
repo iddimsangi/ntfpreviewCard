@@ -1,0 +1,161 @@
+.App {
+  background-color: #0d192b;
+  position: relative;
+  height: 110vh;
+}
+
+.App-div {
+  padding: 2rem 1rem;
+  background-color: #14253d;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 1rem;
+  width: 30%;
+  min-width: 34rem;
+  height: 55rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.App-div-container {
+  width: 90%;
+  min-width: 30rem;
+  height: 30rem;
+  background: url(./images/image-equilibrium.jpg);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-size: 100%;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.App-div-container--img-2 {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.App-div-container:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 247, 0.578)), to(rgba(0, 255, 247, 0.356))), url(./images/image-equilibrium.jpg);
+  background-image: linear-gradient(rgba(0, 255, 247, 0.578), rgba(0, 255, 247, 0.356)), url(./images/image-equilibrium.jpg);
+}
+
+.App-div-container:hover .App-div-container--img-2 {
+  opacity: 1;
+}
+
+.App-div--heading {
+  width: 90%;
+  margin: 8% auto;
+}
+
+.App-div--heading h2 {
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.App-div--heading h2:not(:last-child):hover {
+  color: #00fff7;
+}
+
+.App-div--heading p {
+  margin-top: 1.2rem;
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #8bacda;
+}
+
+.App-div--body {
+  padding-bottom: 1rem;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.App-div--body span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+}
+
+.App-div--body span img {
+  margin-right: 0.5rem;
+}
+
+.App-div--body span:first-of-type {
+  color: #00fff7;
+}
+
+.App-div--footer {
+  width: 90%;
+  margin: 5% auto;
+  border-top: 1px solid #8bacda;
+}
+
+.App-div--footer div {
+  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App-div--footer div img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.App-div--footer div h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.App-div--footer div h3 span {
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.App-div--footer div h3 span:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=App.css.map */

@@ -13,11 +13,10 @@ function App() {
         {/* <img className="App-div-container--img-1" src={img} alt="img" /> */}
         </div>
 
-        <h2 className="App-div--heading">
-          Equilibrium #3429
-          <br />
-          <span>Our Equilibrium collection promotes balance and calm.</span>
-        </h2>
+        <div className="App-div--heading">
+         <h2> Equilibrium #3429</h2>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+        </div>
         <div className="App-div--body">
           <span>
             <img src={loc} alt="loc" />
