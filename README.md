@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/project-screenshot.jpg)
+![https://github.com/iddimsangi/ntfpreviewCard/blob/master/src/images/Screenshot%20from%202021-12-20%2011-50-25.png](https://github.com/iddimsangi/ntfpreviewCard/blob/master/src/images/Screenshot%20from%202021-12-20%2011-50-25.png)
 
 ### Links
 
